@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="UTF-8" />
-  
   <title>Computer Science Honor Society</title>
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/submit.css">
   <script defer src="../js/index.js"></script>
-  
+  <script defer src="../js/submit.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-
-
-
-
-
-
-<!--HERO START-->
 <body>
   <header class="header">
     <div class="logo">CSHS FILLER</div>
@@ -31,7 +23,7 @@
     </button>
     <nav class="nav" id="nav-menu">
       <ul>
-        <li><a href="../index.html">Home</a></li>  
+        <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="points.html">View Points</a></li>
@@ -46,44 +38,40 @@
       Your browser does not support the video tag.
     </video>
     <div class="hero-content">
-    <h1 id="typewriter"></h1>
-    <center><p id="subtitle"></p></center>
+      <h1 id="typewriter"></h1>
+      <center><p id="subtitle"></p></center>
     </div>
-    <br>
-    <br>
-    <div id="scroll-arrow">&#x25BC;</div>   
+    <div id="scroll-arrow">&#x25BC;</div>
   </main>
-<!--HERO END CONTENT START-->
-<br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
 
- <h2>Submit Event Details</h2>
-  <form id="eventForm">
-    <label>Full Name: <input type="text" name="fullName" required></label><br>
-    <label>Event Type:
-      <select name="eventType" required>
-        <option value="Meeting">Meeting</option>
-        <option value="Service">Service</option>
-      </select>
-    </label><br>
-    <label>Event Title: <input type="text" name="eventTitle" required></label><br>
-    <label>Hours: <input type="number" name="hours" step="0.1" required></label><br>
-    <label>Contact Info: <input type="text" name="contactInfo" required></label><br>
-    <button type="submit">Submit</button>
-  </form>
-  <p id="responseMsg"></p>
-
-  <script src="../js/submit.js" defer></script>
+  <section class="form-section">
+    <h2>Submit Event Details</h2>
+    <form id="eventForm" class="event-form">
+      <div class="form-left">
+        <label>Full Name:
+          <input type="text" name="fullName" required>
+        </label>
+        <label>Event Title:
+          <input type="text" name="eventTitle" required>
+        </label>
+        <label>Hours:
+          <input type="number" name="hours" step="0.1" required>
+        </label>
+      </div>
+      <div class="form-right">
+        <label>Event Type:
+          <select name="eventType" required>
+            <option value="Meeting">Meeting</option>
+            <option value="Service">Service</option>
+          </select>
+        </label>
+        <label>Contact Info:
+          <input type="text" name="contactInfo" required>
+        </label>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <p id="responseMsg"></p>
+  </section>
 </body>
-
-
-
 </html>
