@@ -67,21 +67,21 @@
 
  <h2>Submit Event Details</h2>
   <form id="eventForm">
-    <label>Full Name: <input type="text" name="fullName" required></label>
+    <label>Full Name: <input type="text" name="fullName" required></label><br>
     <label>Event Type:
       <select name="eventType" required>
         <option value="Meeting">Meeting</option>
         <option value="Service">Service</option>
       </select>
-    </label>
-    <label>Event Title: <input type="text" name="eventTitle" required></label>
-    <label>Hours: <input type="number" name="hours" step="0.1" required></label>
-    <label>Contact Info: <input type="text" name="contactInfo" required></label>
+    </label><br>
+    <label>Event Title: <input type="text" name="eventTitle" required></label><br>
+    <label>Hours: <input type="number" name="hours" step="0.1" required></label><br>
+    <label>Contact Info: <input type="text" name="contactInfo" required></label><br>
     <button type="submit">Submit</button>
   </form>
   <p id="responseMsg"></p>
 
-  <script src="../js/submit.js"></script>
+  <script src="../js/submit.js" defer></script>
 </body>
 
 
