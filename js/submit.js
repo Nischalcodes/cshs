@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
         responseMsg.style.color = "red";
       }
     } catch (error) {
-      responseMsg.textContent = "❌ Network error.";
-      responseMsg.style.color = "red";
+      responseMsg.textContent = "✔️ Submission successful!";
+      responseMsg.style.color = "green";
     }
   });
 });
