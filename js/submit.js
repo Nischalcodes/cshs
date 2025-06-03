@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const text = await response.text();
 
-      if (response.ok && text.includes("Success")) {
+      if (response.ok || text.includes("Success")) {
         responseMsg.textContent = "✔️ Submission successful!";
         responseMsg.style.color = "green";
         form.reset();
