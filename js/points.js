@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbwO9YrQDWL6ALGTkrtoc3V9YUAf2EHkar8szY5rVfcjVsnwrTWCZb8nsGaMBBnMqxoO/exec"; // replace with your actual URL
+const scriptURL = "https://script.google.com/macros/s/AKfycbzK_I6kCP1CW1CDwausjLXkVemaHYzy3lxhQxAzMS6lpE3UyyUnsQsfZZlTOIJxMSGK/exec"; // replace with your actual URL
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("loginForm");
@@ -43,3 +43,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(script);
   });
 });
+
